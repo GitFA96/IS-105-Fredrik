@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-    strEcho := "Halo"
+    strEcho := "Fredrik"
     servAddr := "localhost:5000"
     tcpAddr, err := net.ResolveTCPAddr("tcp", servAddr)
     if err != nil {
@@ -25,7 +25,7 @@ func main() {
         os.Exit(1)
     }
 
-    println("write to server = ", strEcho)
+    println("write to server =  ", strEcho)
 
     reply := make([]byte, 1024)
 
